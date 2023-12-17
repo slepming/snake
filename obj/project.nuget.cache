@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "IySmjOq/NQ0gflJKya6pLlPVp0uabYZ/aVJysLJpABPhbdaXw4bp+PpXq689T2bQbfjqCZu6S2sOj+w8H6y0ag==",
+  "success": true,
+  "projectFilePath": "C:\\newGames\\programming\\C#\\Snake\\Snake.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ippol\\.nuget\\packages\\ppy.sdl2-cs\\1.0.82\\ppy.sdl2-cs.1.0.82.nupkg.sha512"
+  ],
+  "logs": []
+}
