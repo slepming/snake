@@ -44,11 +44,11 @@ namespace Snake
 
                 SDL.SDL_RenderClear(renderer);
                 SDL.SDL_SetRenderDrawColor(renderer, 0, 255, 0, 255);
-                for (int x = (SCREEN_WIDTH / 2) ; x < SCREEN_WIDTH; x += GRID_CELL_SIZE)
+                for (int x = 0; x < SCREEN_WIDTH; x += GRID_CELL_SIZE)
                 {
                     SDL.SDL_RenderDrawLine(renderer, x, 0, x, SCREEN_HEIGHT);
                 }
-                for (int y = (SCREEN_HEIGHT / 2); y < SCREEN_HEIGHT; y += GRID_CELL_SIZE)
+                for (int y = 0; y < SCREEN_HEIGHT; y += GRID_CELL_SIZE)
                 {
                     SDL.SDL_RenderDrawLine(renderer, 0, y, SCREEN_WIDTH, y);
                 }
