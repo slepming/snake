@@ -17,7 +17,7 @@ namespace Snake
             }
             if (e.key.keysym.sym == SDL.SDL_Keycode.SDLK_w)
             {
-                rect.y += GRID_SIZE;
+                rect.y -= GRID_SIZE;
             }
             if (e.key.keysym.sym == SDL.SDL_Keycode.SDLK_d)
             {
@@ -25,7 +25,7 @@ namespace Snake
             }
             if (e.key.keysym.sym == SDL.SDL_Keycode.SDLK_s)
             {
-                rect.y -= GRID_SIZE;
+                rect.y += GRID_SIZE;
             }
         }
     }

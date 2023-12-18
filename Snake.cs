@@ -16,8 +16,8 @@ namespace Snake
             if(renderer != 0 && SNAKE_SIZE > 0)
             {
                 SDL.SDL_Rect rect = new SDL.SDL_Rect();
-                rect.x = 100;
-                rect.y = 100;
+                rect.x = 101;
+                rect.y = 101;
                 rect.w = SNAKE_SIZE;
                 rect.h = SNAKE_SIZE;
                 SDL.SDL_SetRenderDrawColor(renderer, 255, 255, 255, 255);

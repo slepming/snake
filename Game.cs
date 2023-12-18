@@ -12,7 +12,7 @@ namespace Snake
         const int GRID_WIDTH = 100;
         const int GRID_HEIGHT = 100;
         const int GRID_CELL_SIZE = 20;
-        const int SNAKE_SIZE = 19;
+        const int SNAKE_SIZE = 18;
         public static void Start(int SCREEN_WIDTH, int SCREEN_HEIGHT, string WINDOW_TITLE)
         {
             SDL.SDL_Init(SDL.SDL_INIT_VIDEO);
@@ -61,8 +61,6 @@ namespace Snake
                 SDL.SDL_RenderPresent(renderer);
 
             }
-
-
 
             SDL.SDL_DestroyWindow(window);
             SDL.SDL_RenderClear(renderer);
