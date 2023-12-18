@@ -53,13 +53,7 @@ namespace Snake
                     SDL.SDL_RenderDrawLine(renderer, 0, y, SCREEN_WIDTH, y);
                 }
 
-                SDL.SDL_Rect rect = new SDL.SDL_Rect();
-                rect.x = 100;
-                rect.y = 100;
-                rect.w = SNAKE_SIZE;
-                rect.h = SNAKE_SIZE;
-                SDL.SDL_SetRenderDrawColor(renderer, 255, 255, 255, 255);
-                SDL.SDL_RenderFillRect(renderer, ref rect);
+                Snake.Create(renderer, e ,SNAKE_SIZE, GRID_CELL_SIZE);
 
 
                 SDL.SDL_SetRenderDrawColor(renderer, 0, 0, 0, 255);
