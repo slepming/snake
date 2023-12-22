@@ -6,11 +6,7 @@ using System.Linq;
 
 public class Program
 {
-#if DEBUG
-    static readonly string WINDOW_TITLE = "SNAKE-DEV";
-#elif !DEBUG
-static string WINDOW_TITLE = "SNAKE";
-#endif
+    static readonly string WINDOW_TITLE = "SNAKE";
     const int w = 600;
     const int h = 480;
     static void Main(string[] args)
