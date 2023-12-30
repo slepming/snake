@@ -8,10 +8,12 @@ using SDL2;
 
 namespace Snake
 {
+    
+
+
     public class Game
     {
         static System.Timers.Timer aTimer;
-        Snake snake;
 
 
 
@@ -35,7 +37,6 @@ namespace Snake
             SDL.SDL_RenderClear(renderer);
             SDL.SDL_Event e;
 
-            SetTimer();
             bool started = true;
             while (started)
             {
@@ -63,12 +64,6 @@ namespace Snake
                 {
                     SDL.SDL_RenderDrawLine(renderer, 0, y, SCREEN_WIDTH, y);
                 }
-                // Options snake
-                Snake.renderer = renderer;
-                Snake.e = e;
-                Snake.SNAKE_SIZE = SNAKE_SIZE;
-                Snake.GRID_SIZE = GRID_CELL_SIZE;
-                // Options end
 
                 SDL.SDL_SetRenderDrawColor(renderer, 0, 0, 0, 255);
 
@@ -81,19 +76,6 @@ namespace Snake
 
             SDL.SDL_Quit();
         }
-        private static void SetTimer()
-        {
-            // Create a timer with a two second interval.
-            aTimer = new System.Timers.Timer(1000/fps);
-            // Hook up the Elapsed event for the timer. 
-            aTimer.Elapsed += OnTimedEvent;
-            aTimer.AutoReset = true;
-            aTimer.Enabled = true;
-        }
 
-        private static void OnTimedEvent(Object source, ElapsedEventArgs e)
-        {
-            Snake.Create();
-        }
     }
 }
